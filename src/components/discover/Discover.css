@@ -1,0 +1,70 @@
+.container-right {
+  display: flex;
+  height: 100vh;
+}
+
+.nav-wrapper {
+  background: url("https://wallpaperset.com/w/full/7/3/c/291218.jpg");
+  background-position: center;
+  background-size: cover;
+
+  padding: 4.5% 0;
+  display: flex;
+}
+
+.nav-left {
+  display: flex;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+}
+
+/* Start Divide Screen Home */
+.home-divide {
+  display: flex;
+  width: 85vw;
+
+  padding: 0% 0% 6% 8%;
+}
+
+.home-divide .popular-left,
+.popular-right {
+  flex: 0.5;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .home-divide {
+    flex-direction: column;
+  }
+}
+
+/* End Divide Screen Home */
+
+.container-right {
+  overflow: hidden;
+}
+
+.container-right section {
+  display: flex;
+}
+
+/* Start Chart Artists */
+
+.featured-artists {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+@media (min-width: 0px) and (max-width: 450px) {
+  .featured-artists {
+    grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+  }
+
+  .container-right {
+    flex-direction: column;
+    height: auto !important;
+  }
+}
+
+/* End Chart Artists */
